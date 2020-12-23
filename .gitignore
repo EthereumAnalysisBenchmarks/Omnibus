@@ -4,3 +4,7 @@
 .DS_Store
 node_modules/
 .vscode/
+.next/
+export/swc-definition.json
+out_functions/
+out_publish/

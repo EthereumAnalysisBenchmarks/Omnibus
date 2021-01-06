@@ -1,8 +1,4 @@
-# Smart Contract Weakness Classification Registry
-[![CircleCI](https://circleci.com/gh/SmartContractSecurity/SWC-registry/tree/master.svg?style=svg)](https://circleci.com/gh/SmartContractSecurity/SWC-registry/tree/master)
-[![Pages](https://img.shields.io/badge/pages-online-blue.svg)](https://smartcontractsecurity.github.io/SWC-registry/)
-[![Discord](https://img.shields.io/discord/481002907366588416.svg)](https://discord.gg/qcNvR2r)
-
+# CertiK Extended Smart Contract Weakness Classification Registry
 
 The Smart Contract Weakness Classification Registry (SWC Registry) is an implementation of the weakness classification scheme proposed in [EIP-1470](https://github.com/ethereum/EIPs/issues/1469). It is loosely aligned to the terminologies and structure used in the Common Weakness Enumeration ([CWE](https://cwe.mitre.org)) while overlaying a wide range of weakness variants that are specific to smart contracts.
 
@@ -85,6 +81,14 @@ The configuration contains meta-information about the weaknesses contained in a 
 - Line 6-7: `bytecode_offsets` is a tuple consisting of the keccak256 hash of the runtime or creation byte code and a list of valid offsets. 
 - Line 8-9: `line_numbers` is a tuple consisting of the source file and a list of valid line numbers. 
 
+
+## Start UI Locally
+
+```
+yarn install
+yarn dev
+```
+
 ## Contributing
 
 Before you create a PR for the first time make sure you have read:
@@ -105,6 +109,6 @@ Weaknesses in 'smart contract adjacent' code should not be included. For example
 
 ## Contact
 
-This repository is maintained by the team behind [MythX](https://mythx.io).
+This repository is maintained by the team behind [MythX](https://mythx.io) and [CertiK Foundation](https://certik.foundation).
 
 Please join the #swc-registry channel on the [MythX Discord](https://discord.gg/qcNvR2r) for discussions.
